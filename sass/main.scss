@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900');
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+.container {
+	width: 1360px;
+	margin: 0 auto;
+}
+
+#controlArea {
+	width: 270px;
+	height: 700px;
+	float: right;
+	border: #56382e solid thin;
+	border-radius: 0 15px 15px 0;
+	background-image: radial-gradient(circle farthest-side at right top, rgba(255, 255, 0, 0.2), rgba(32, 178, 170, 0.2));	
+	&_answersCount {
+		display: inline-block;
+		border: white solid thin;
+		border-radius: 50%;
+		font-size: 40px;
+		width: 150px;
+		height: 150px;
+		background-color: white;
+		margin: {
+			left: 55px;
+			top: 30px;
+		}
+		text-align: center;
+	}
+}
+
+.controlArea_button {
+	font-size: 23px;
+	width: 246px;
+	text-align: center;
+	cursor: pointer;
+	border: white solid thin;
+	border-radius: 25px;
+	background-color: white;
+	margin: {
+		top: 30px;
+		left: 7px;
+	}	
+	padding: {
+		top: 10px;
+		bottom: 10px;
+		right: 4px;
+		left: 4px;
+	}
+	&-reset {
+		width: 150px;
+		margin-left: 52px;
+	}
+	&-active {
+		background-color: #F3F3F3;
+		border-color: black;
+		border-width: medium;
+		font-weight: 600;
+		width: 242px;
+		padding: {
+			top: 8px;
+			bottom: 8px;
+		}	
+	}
+	&:hover {
+		font-weight: 600;
+	}
+}
+
+#questionAnswerArea {
+	border: thin solid black;
+	width: 1080px;
+	height: 700px;
+	display: inline-block;
+	float: left;
+	border-radius: 15px 0 0 15px;
+	&_answersWrap {
+		margin-top: 129px;
+		height: 295px;
+		border-top: solid thin black;
+	}
+}
+
+.questionAnswerArea {
+	&_notation {
+		font-size: 100px;
+		display: inline-block;
+		margin: {
+			top: 150px;
+		}
+		&:first-child {
+			margin-left: 440px;
+		}
+	}
+	&_answersBlock {
+		display: inline-block;
+		border: thin solid black;
+		text-align: center;
+		vertical-align: top;
+		height: 293px;
+		width: 250px;
+		&:first-child {
+			margin-left: 50px;
+		}
+	}
+	&_answer {
+		font-size: 28px;
+		border-bottom: thin solid rgba(128, 128, 128, 0.5);
+		padding: {
+			top: 3px;
+			bottom: 2px;
+		}
+		&:hover {
+			font-weight: 600;
+			border: medium solid #555555;
+			padding: {
+				top: 0;
+				bottom: 0;
+			}
+		}
+	}
+}

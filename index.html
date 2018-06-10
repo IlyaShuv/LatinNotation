@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Тренажер - латинские обозначение нот и аккордов</title>
+	<title>Тренажер - латинские обозначения нот и аккордов</title>
 	<meta charset="utf-8">
-	<script src="js/script.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+	<div class="container">
+		<div id="questionAnswerArea">
+			<div class="questionAnswerArea_notation questionAnswerArea_notation-note">C</div>
+			<div class="questionAnswerArea_notation questionAnswerArea_notation-triad">m</div>
+			<div class="questionAnswerArea_notation questionAnswerArea_notation-sept">7</div><!--&#916-дельта-->
+			<div class="questionAnswerArea_notation questionAnswerArea_notation-?"> - ?</div>
+			<div id="questionAnswerArea_answersWrap">
+				<div class="questionAnswerArea_answersBlock questionAnswerArea_answersBlock-notes">
+					<div class="questionAnswerArea_answer questionAnswerArea_answerNote-C">До</div>
+					<div class="questionAnswerArea_answer questionAnswerArea_answerNote-D">Ре</div>
+					<div class="questionAnswerArea_answer questionAnswerArea_answerNote-E">Ми</div>
+					<div class="questionAnswerArea_answer questionAnswerArea_answerNote-F">Фа</div>
+					<div class="questionAnswerArea_answer questionAnswerArea_answerNote-G">Соль</div>
+					<div class="questionAnswerArea_answer questionAnswerArea_answerNote-A">Ля</div>
+					<div class="questionAnswerArea_answer questionAnswerArea_answerNote-B">Си</div>
+				</div>
+				<div class="questionAnswerArea_answersBlock questionAnswerArea_answersBlock-alteration">
+					<div class="questionAnswerArea_answer questionAnswerArea_answerNote-C">Диез</div>
+					<div class="questionAnswerArea_answer questionAnswerArea_answerNote-D">Бемоль</div>
+				</div>
+			</div>		
+		</div>
 
+		<div id="controlArea"><!--Блок с кнопками управления и индикатором статистики ответов-->
+			<div class="controlArea_button controlArea_button-mode controlArea_button-active">Одна нота</div>
+			<div class="controlArea_button controlArea_button-mode">Трезвучие</div>
+			<div class="controlArea_button controlArea_button-mode">Септаккорд</div>
+			<div id="controlArea_answersCount"><br><!--Элемент с индикатором статистики ответов-->
+				<span id="controlArea_trueAns">0</span>/<span id="controlArea_allAns">0</span>
+			</div>
+			<div class="controlArea_button controlArea_button-reset">Обнулить</div>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
