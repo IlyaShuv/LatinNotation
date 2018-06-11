@@ -84,8 +84,14 @@ body {
 	display: inline-block;
 	float: left;
 	border-radius: 15px 0 0 15px;
+	&_questionResult {
+		margin-top: 80px;
+		font-size: 32px;
+		text-align: center;
+		height: 50px;
+	}
 	&_answersWrap {
-		margin-top: 129px;
+		margin-top: 0;
 		height: 295px;
 		border-top: solid thin black;
 	}
@@ -99,7 +105,7 @@ body {
 			top: 150px;
 		}
 		&:first-child {
-			margin-left: 440px;
+			margin-left: 400px;
 		}
 	}
 	&_answersBlock {
@@ -110,7 +116,10 @@ body {
 		height: 293px;
 		width: 250px;
 		&:first-child {
-			margin-left: 50px;
+			margin-left: 30px;
+		}
+		&-hidden {
+			display: none;
 		}
 	}
 	&_answer {

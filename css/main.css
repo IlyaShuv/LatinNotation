@@ -81,8 +81,15 @@ body {
   border-radius: 15px 0 0 15px;
 }
 
+#questionAnswerArea_questionResult {
+  margin-top: 80px;
+  font-size: 32px;
+  text-align: center;
+  height: 50px;
+}
+
 #questionAnswerArea_answersWrap {
-  margin-top: 129px;
+  margin-top: 0;
   height: 295px;
   border-top: solid thin black;
 }
@@ -94,7 +101,7 @@ body {
 }
 
 .questionAnswerArea_notation:first-child {
-  margin-left: 440px;
+  margin-left: 400px;
 }
 
 .questionAnswerArea_answersBlock {
@@ -107,7 +114,11 @@ body {
 }
 
 .questionAnswerArea_answersBlock:first-child {
-  margin-left: 50px;
+  margin-left: 30px;
+}
+
+.questionAnswerArea_answersBlock-hidden {
+  display: none;
 }
 
 .questionAnswerArea_answer {
